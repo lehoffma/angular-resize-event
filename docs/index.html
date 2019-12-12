@@ -62,7 +62,7 @@
                                 id="xs-modules-links"
                             >
                                 <li class="link">
-                                    <a href="modules/AngularResizeEventModule.html" >AngularResizeEventModule</a>
+                                    <a href="modules/AngularResizedEventModule.html" >AngularResizedEventModule</a>
                                 </li>
                         </ul>
                     </li>
@@ -85,6 +85,22 @@
                         </ul>
                     </li>
             
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-classes-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="classes/ResizedEvent.html" >ResizedEvent</a>
+                                </li>
+                        </ul>
+                    </li>
             
             
             
@@ -148,7 +164,7 @@
                                        id="modules-links"
                    >
                                        <li class="link">
-                                           <a href="modules/AngularResizeEventModule.html" >AngularResizeEventModule</a>
+                                           <a href="modules/AngularResizedEventModule.html" >AngularResizedEventModule</a>
                                        </li>
                                </ul>
                            </li>
@@ -171,6 +187,22 @@
                                </ul>
                            </li>
                    
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#classes-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="classes/ResizedEvent.html" >ResizedEvent</a>
+                                       </li>
+                               </ul>
+                           </li>
                    
                    
                    
@@ -188,20 +220,17 @@
                </div>
                <div class="content readme">
                    <div class="content-data">
-<h1 id="angularresize">AngularResize</h1>
-<p>This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 7.1.1.</p>
-<h2 id="development-server">Development server</h2>
-<p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The app will automatically reload if you change any of the source files.</p>
-<h2 id="code-scaffolding">Code scaffolding</h2>
-<p>Run <code>ng generate component component-name</code> to generate a new component. You can also use <code>ng generate directive|pipe|service|class|guard|interface|enum|module</code>.</p>
-<h2 id="build">Build</h2>
-<p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory. Use the <code>--prod</code> flag for a production build.</p>
-<h2 id="running-unit-tests">Running unit tests</h2>
-<p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.</p>
-<h2 id="running-end-to-end-tests">Running end-to-end tests</h2>
-<p>Run <code>ng e2e</code> to execute the end-to-end tests via <a href="http://www.protractortest.org/">Protractor</a>.</p>
-<h2 id="further-help">Further help</h2>
-<p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a href="https://github.com/angular/angular-cli/blob/master/README.md">Angular CLI README</a>.</p>
+<h1 id="angular-resize-event">Angular Resize Event</h1>
+<p>Angular 7 directive for detecting changes of an element size.</p>
+<p>It is as simple as:</p>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> (<span class="hljs-attr">resized</span>)=<span class="hljs-string">"onResized($event)"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><p>It internally uses <code>ResizeSensor</code> from <a href="https://github.com/marcj/css-element-queries">CSS Element Queries</a>.</p>
+<p><a href="https://travis-ci.org/vdolek/angular-resize-event"><img src="https://travis-ci.org/vdolek/angular-resize-event.svg?branch=master" alt="Build Status" class="img-responsive"></a><br><a href="https://badge.fury.io/js/angular-resize-event"><img src="https://badge.fury.io/js/angular-resize-event.svg" alt="npm version" class="img-responsive"></a></p>
+<h2 id="using-the-library">Using the library</h2>
+<p>Import the library in any Angular application by running:</p>
+<pre><code class="hljs bash">$ npm install angular-resize-event</code></pre><p>and then from your Angular <code>AppModule</code>:</p>
+<pre><code class="hljs typescript"><span class="hljs-keyword">import</span> { BrowserModule } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser'</span>;<br><span class="hljs-keyword">import</span> { NgModule } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;<br><span class="hljs-keyword">import</span> { AppComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">'./app.component'</span>;<br><br><span class="hljs-comment">// Import the library module</span><br><span class="hljs-keyword">import</span> { AngularResizedEventModule } <span class="hljs-keyword">from</span> <span class="hljs-string">'angular-resize-event'</span>;<br><br><span class="hljs-meta">@NgModule</span>({<br>  declarations: [<br>    AppComponent<br>  ],<br>  imports: [<br>    BrowserModule,<br><br>    <span class="hljs-comment">// Specify AngularResizedEventModule library as an import</span><br>    AngularResizedEventModule<br>  ],<br>  providers: [],<br>  bootstrap: [ AppComponent ]<br>})<br><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> AppModule { }</code></pre><p>Once your library is imported, you can use its <code>resized</code> directive in your Angular application:</p>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> (<span class="hljs-attr">resized</span>)=<span class="hljs-string">"onResized($event)"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><pre><code class="hljs typescript"><span class="hljs-keyword">import</span> { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;<br><br><span class="hljs-comment">// Import the resized event model</span><br><span class="hljs-keyword">import</span> { ResizedEvent } <span class="hljs-keyword">from</span> <span class="hljs-string">'angular-resize-event'</span>;<br><br><span class="hljs-meta">@Component</span>({...})<br><span class="hljs-keyword">class</span> MyComponent {<br>  width: <span class="hljs-built_in">number</span>;<br>  height: <span class="hljs-built_in">number</span>;<br><br>  onResized(event: ResizedEvent) {<br>    <span class="hljs-keyword">this</span>.width = event.newWidth;<br>    <span class="hljs-keyword">this</span>.height = event.newHeight;<br>  }<br>}</code></pre><h2 id="license">License</h2>
+<p>MIT © <a href="mailto:martin@vdolek.cz">Martin Volek</a></p>
 
 
 

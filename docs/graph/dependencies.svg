@@ -21,46 +21,62 @@
 <polygon fill="#fb8072" stroke="transparent" points="406,-10 406,-30 426,-30 426,-10 406,-10"/>
 <text text-anchor="start" x="429.7258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
 <g id="clust1" class="cluster">
-<title>cluster_AngularResizeEventModule</title>
-<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="152,-70 152,-268 344,-268 344,-70 152,-70"/>
+<title>cluster_AngularResizedEventModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="108,-70 108,-268 388,-268 388,-70 108,-70"/>
 </g>
 <g id="clust2" class="cluster">
-<title>cluster_AngularResizeEventModule_declarations</title>
-<polygon fill="none" stroke="#000000" points="184,-78 184,-130 312,-130 312,-78 184,-78"/>
+<title>cluster_AngularResizedEventModule_declarations</title>
+<polygon fill="none" stroke="#000000" points="252,-78 252,-130 380,-130 380,-78 252,-78"/>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_AngularResizedEventModule_imports</title>
+<polygon fill="none" stroke="#000000" points="116,-78 116,-130 244,-130 244,-78 116,-78"/>
 </g>
 <g id="clust5" class="cluster">
-<title>cluster_AngularResizeEventModule_exports</title>
+<title>cluster_AngularResizedEventModule_exports</title>
 <polygon fill="none" stroke="#000000" points="182,-208 182,-260 314,-260 314,-208 182,-208"/>
 </g>
 <!-- ResizedDirective -->
 <g id="node1" class="node">
 <title>ResizedDirective</title>
-<polygon fill="#ffffb3" stroke="#000000" points="304.3991,-122 191.6009,-122 191.6009,-86 304.3991,-86 304.3991,-122"/>
-<text text-anchor="middle" x="248" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">ResizedDirective</text>
+<polygon fill="#ffffb3" stroke="#000000" points="372.3991,-122 259.6009,-122 259.6009,-86 372.3991,-86 372.3991,-122"/>
+<text text-anchor="middle" x="316" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">ResizedDirective</text>
 </g>
-<!-- AngularResizeEventModule -->
+<!-- AngularResizedEventModule -->
 <g id="node2" class="node">
-<title>AngularResizeEventModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="335.896,-187 332.896,-191 311.896,-191 308.896,-187 160.104,-187 160.104,-151 335.896,-151 335.896,-187"/>
-<text text-anchor="middle" x="248" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">AngularResizeEventModule</text>
+<title>AngularResizedEventModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="339.396,-187 336.396,-191 315.396,-191 312.396,-187 156.604,-187 156.604,-151 339.396,-151 339.396,-187"/>
+<text text-anchor="middle" x="248" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">AngularResizedEventModule</text>
 </g>
-<!-- ResizedDirective&#45;&gt;AngularResizeEventModule -->
+<!-- ResizedDirective&#45;&gt;AngularResizedEventModule -->
 <g id="edge1" class="edge">
-<title>ResizedDirective&#45;&gt;AngularResizeEventModule</title>
-<path fill="none" stroke="#000000" d="M248,-122.1061C248,-122.1061 248,-140.991 248,-140.991"/>
-<polygon fill="#000000" stroke="#000000" points="244.5001,-140.9909 248,-150.991 251.5001,-140.991 244.5001,-140.9909"/>
+<title>ResizedDirective&#45;&gt;AngularResizedEventModule</title>
+<path fill="none" stroke="#000000" d="M299.4993,-122.1061C299.4993,-122.1061 299.4993,-140.991 299.4993,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="295.9994,-140.9909 299.4993,-150.991 302.9994,-140.991 295.9994,-140.9909"/>
 </g>
 <!-- ResizedDirective  -->
-<g id="node3" class="node">
+<g id="node4" class="node">
 <title>ResizedDirective </title>
 <polygon fill="#fb8072" stroke="#000000" points="305.8984,-252 190.1016,-252 190.1016,-216 305.8984,-216 305.8984,-252"/>
 <text text-anchor="middle" x="248" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">ResizedDirective </text>
 </g>
-<!-- AngularResizeEventModule&#45;&gt;ResizedDirective  -->
-<g id="edge2" class="edge">
-<title>AngularResizeEventModule&#45;&gt;ResizedDirective </title>
+<!-- AngularResizedEventModule&#45;&gt;ResizedDirective  -->
+<g id="edge3" class="edge">
+<title>AngularResizedEventModule&#45;&gt;ResizedDirective </title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M248,-187.1061C248,-187.1061 248,-205.991 248,-205.991"/>
 <polygon fill="#000000" stroke="#000000" points="244.5001,-205.9909 248,-215.991 251.5001,-205.991 244.5001,-205.9909"/>
+</g>
+<!-- CommonModule -->
+<g id="node3" class="node">
+<title>CommonModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="235.6681,-122 232.6681,-126 211.6681,-126 208.6681,-122 124.3319,-122 124.3319,-86 235.6681,-86 235.6681,-122"/>
+<text text-anchor="middle" x="180" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">CommonModule</text>
+</g>
+<!-- CommonModule&#45;&gt;AngularResizedEventModule -->
+<g id="edge2" class="edge">
+<title>CommonModule&#45;&gt;AngularResizedEventModule</title>
+<path fill="none" stroke="#000000" d="M196.318,-122.1061C196.318,-122.1061 196.318,-140.991 196.318,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="192.8181,-140.9909 196.318,-150.991 199.8181,-140.991 192.8181,-140.9909"/>
 </g>
 </g>
 </svg>
